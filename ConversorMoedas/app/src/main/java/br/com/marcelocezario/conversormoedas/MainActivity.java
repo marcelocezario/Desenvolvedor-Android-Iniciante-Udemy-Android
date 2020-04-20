@@ -1,6 +1,7 @@
 package br.com.marcelocezario.conversormoedas;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.widget.EditText;
 
@@ -11,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText valor = findViewById(R.id.editValor);
+        EditText valor = findViewById(R.id.edit_Valor);
         valor.getText();
 
     }
