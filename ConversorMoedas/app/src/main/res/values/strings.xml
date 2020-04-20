@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ConversorMoedas</string>
+    <string name="qual_o_valor_em_real">Qual é o valor em real?</string>
 </resources>
