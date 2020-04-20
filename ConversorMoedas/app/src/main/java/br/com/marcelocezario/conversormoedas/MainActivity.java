@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.mViewHolder.buttonCalculate = findViewById(R.id.button_Calculate);
 
         this.mViewHolder.buttonCalculate.setOnClickListener(this);
-        this.mViewHolder.textDolar.setOnClickListener(this);
 
         this.clearValues();
     }
