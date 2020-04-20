@@ -3,11 +3,12 @@ package br.com.marcelocezario.conversormoedas;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ViewHolder mViewHolder = new ViewHolder();
 
@@ -20,6 +21,17 @@ public class MainActivity extends AppCompatActivity {
         this.mViewHolder.textDolar = findViewById(R.id.text_Dolar);
         this.mViewHolder.textEuro = findViewById(R.id.text_Euro);
         this.mViewHolder.buttonCalculate = findViewById(R.id.button_Calculate);
+
+        this.mViewHolder.buttonCalculate.setOnClickListener(this);
+        this.mViewHolder.textDolar.setOnClickListener(this);
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.button_Calculate) {
+            // Lógica
+        }
     }
 
     private static class ViewHolder {
