@@ -37,10 +37,12 @@
         android:layout_marginTop="16dp"
         android:text="365 dias"
         android:layout_centerHorizontal="true" />
+
     <Button
+        android:id="@+id/button_confirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Sim/Não/Não confirmado"
+        android:text="Sim/Não/Não confirmado" />
 
 </RelativeLayout>
