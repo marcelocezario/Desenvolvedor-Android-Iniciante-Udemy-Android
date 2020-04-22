@@ -13,7 +13,7 @@ import br.com.marcelocezario.festafimdeano.data.SecurityPreferences;
 public class DetailsActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ViewHolder mViewHolder = new ViewHolder();
-    private SecurityPreferences mSecurityPreferences = new SecurityPreferences();
+    private SecurityPreferences mSecurityPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
