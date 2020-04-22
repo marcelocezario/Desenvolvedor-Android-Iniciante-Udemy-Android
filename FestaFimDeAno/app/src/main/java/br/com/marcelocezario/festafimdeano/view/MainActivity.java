@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String daysLeft = String.format("%s %s", String.valueOf(this.getDaysLeft()), getString(R.string.dias));
         this.mViewHolder.textDaysLeft.setText(daysLeft);
 
-        this.verifyPresence();
     }
 
     private void verifyPresence() {
@@ -52,6 +51,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             this.mViewHolder.buttonConfirm.setText((getString(R.string.nao)));
         }
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        this.verifyPresence();
+
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
 
     @Override
     public void onClick(View v) {
